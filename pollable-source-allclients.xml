@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.mckesson.kafka.connect</groupId>
+		<artifactId>kafka-connect-parent</artifactId>
+		<version>1.0.0</version>
+	</parent>
+
+	<artifactId>pollable-source-allclients</artifactId>
+        <packaging>pom</packaging>
+	<description>PollableAPIClientSourceConnector with all API Clients included</description>
+
+	<properties>
+		<connect.component.name>pollable-source-allclients</connect.component.name>
+		<connect.component.componentTypes>source</connect.component.componentTypes>
+		<connect.component.title>Pollable Source Connector</connect.component.title>
+		<connect.component.description>This connector allows Kafka Connect to receive data from different services, APIs etc</connect.component.description>
+		<connect.component.documentation.url>https://github.com/vrudenskyi/kafka-connect-pollable-source/wiki</connect.component.documentation.url>
+		<connect.component.source.url>https://github.com/vrudenskyi/kafka-connect-pollable-source</connect.component.source.url>
+		<connect.component.support.url>https://github.com/vrudenskyi/kafka-connect-pollable-source/issues</connect.component.support.url>
+		<connect.component.tags>logs,api,pollable,rest,http,cloud</connect.component.tags>
+	</properties>
+
+
+	<dependencies>
+		<!-- parent managed deps -->
+		<dependency>
+			<groupId>com.mckesson.kafka.connect</groupId>
+			<artifactId>kafka-connect-common</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.kafka</groupId>
+			<artifactId>kafka-clients</artifactId>
+		</dependency>
+
+		<!-- project specific deps -->
+		<dependency>
+			<groupId>com.cronutils</groupId>
+			<artifactId>cron-utils</artifactId>
+			<version>8.0.0</version>
+		</dependency>
+
+		<!-- included clients -->
+		<dependency>
+			<groupId>com.mckesson.kafka.connect</groupId>
+			<artifactId>azure-api-client</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.mckesson.kafka.connect</groupId>
+			<artifactId>gcp-api-client</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.mckesson.kafka.connect</groupId>
+			<artifactId>http-api-client</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.mckesson.kafka.connect</groupId>
+			<artifactId>incapsula_logs-api-client</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.mckesson.kafka.connect</groupId>
+			<artifactId>jira-api-client</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.mckesson.kafka.connect</groupId>
+			<artifactId>lastpass_ent-api-client</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.mckesson.kafka.connect</groupId>
+			<artifactId>o365_reports-api-client</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.mckesson.kafka.connect</groupId>
+			<artifactId>okta_logs-api-client</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.mckesson.kafka.connect</groupId>
+			<artifactId>workday_audit-api-client</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+	</dependencies>
+
+</project>

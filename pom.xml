@@ -17,8 +17,8 @@
 		<connect.component.name>pollable-source</connect.component.name>
 		<connect.component.componentTypes>source</connect.component.componentTypes>
 		<connect.component.title>Pollable Source Connector</connect.component.title>
-		<connect.component.description>This connector allows Kafka Connect to receive data from different services, APIs etc	</connect.component.description>
-		<connect.component.documentation.url>https://github.com/vrudenskyi/kafka-connect-pollable-source</connect.component.documentation.url>
+		<connect.component.description>This connector allows Kafka Connect to receive data from different services, APIs etc</connect.component.description>
+		<connect.component.documentation.url>https://github.com/vrudenskyi/kafka-connect-pollable-source/wiki</connect.component.documentation.url>
 		<connect.component.source.url>https://github.com/vrudenskyi/kafka-connect-pollable-source</connect.component.source.url>
 		<connect.component.support.url>https://github.com/vrudenskyi/kafka-connect-pollable-source/issues</connect.component.support.url>
 		<connect.component.tags>logs,api,pollable</connect.component.tags>
