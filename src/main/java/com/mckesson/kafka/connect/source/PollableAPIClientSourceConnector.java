@@ -44,7 +44,7 @@ public class PollableAPIClientSourceConnector extends SourceConnector {
 
     try {
       Properties props = new Properties();
-      props.load(PollableAPIClientSourceConnector.class.getResourceAsStream("/kafka-connect-common.properties"));
+      props.load(PollableAPIClientSourceConnector.class.getResourceAsStream("/pollable-source.properties"));
       version = props.getProperty("version", version).trim();
     } catch (IOException e) {
       log.warn("Failed to read version", e);
