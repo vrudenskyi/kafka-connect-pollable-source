@@ -9,11 +9,11 @@ The Source Connector will receive data from network  and write to kafka a topic.
 ```properties
 name=pollableConnector
 tasks.max=1
-connector.class=com.mckesson.kafka.connect.source.PollableAPIClientSourceConnector
+connector.class=com.vrudenskyi.kafka.connect.source.PollableAPIClientSourceConnector
 topic=api_data
 
 # Set these required values
-apiclient.class=com.mckesson.kafka.connect.source.PollableAPIClient
+apiclient.class=com.vrudenskyi.kafka.connect.source.PollableAPIClient
 poll.interval = 30000
 
 ##Client specific configs
@@ -21,7 +21,7 @@ poll.interval = 30000
 ### Configuration options
 | Name | Description| Type| Default | Importance |Notes
 |---|---|---|---|---|---|
-|apiclient.class|Class implemented interface [PollableAPIClient](src/main/java/com/mckesson/kafka/connect/source/PollableAPIClient.java) |class||high|
+|apiclient.class|Class implemented interface [PollableAPIClient](src/main/java/com/vrudenskyi/kafka/connect/source/PollableAPIClient.java) |class||high|
 |topic | Kafka topic name | string | | high
 |poll.interval|Poll frequency in millis| long | 5000 | medium
 |poll.size | Target poll size. | int | 1000 | medium | api.client implementation is responsible for number of records that will be returned.
@@ -44,8 +44,8 @@ Check each project docs for more details
 ### Sample configurations
 #### Http Client - read from Jamf server
 ```properties
-connector.class=com.mckesson.kafka.connect.source.PollableAPIClientSourceConnector
-apiclient.class=com.mckesson.kafka.connect.http.JsonGetAPIClient
+connector.class=com.vrudenskyi.kafka.connect.source.PollableAPIClientSourceConnector
+apiclient.class=com.vrudenskyi.kafka.connect.http.JsonGetAPIClient
 tasks.max=1
 topic=src_jamf
 poll.interval=3600000
@@ -61,8 +61,8 @@ json.data.pointer=/computer_reports
 ```
 #### Salesforce - read Event log
 ```properties
-connector.class=com.mckesson.kafka.connect.source.PollableAPIClientSourceConnector
-apiclient.class=com.mckesson.kafka.connect.salesforce.EventLogPollableAPIClient
+connector.class=com.vrudenskyi.kafka.connect.source.PollableAPIClientSourceConnector
+apiclient.class=com.vrudenskyi.kafka.connect.salesforce.EventLogPollableAPIClient
 topic=src_sfdc_eventlog
 poll.interval=3600000
 

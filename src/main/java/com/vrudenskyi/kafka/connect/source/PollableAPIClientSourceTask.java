@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.mckesson.kafka.connect.source;
+package com.vrudenskyi.kafka.connect.source;
 
 import java.time.ZonedDateTime;
 import java.util.ArrayList;

@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>com.mckesson.kafka.connect</groupId>
+		<groupId>com.vrudenskyi.kafka.connect</groupId>
 		<artifactId>kafka-connect-parent</artifactId>
 		<version>1.0.0</version>
 	</parent>
@@ -29,7 +29,7 @@
 	<dependencies>
 		<!-- parent managed deps -->
 		<dependency>
-			<groupId>com.mckesson.kafka.connect</groupId>
+			<groupId>com.vrudenskyi.kafka.connect</groupId>
 			<artifactId>kafka-connect-common</artifactId>
 		</dependency>
 		<dependency>
@@ -46,47 +46,47 @@
 
 		<!-- included clients -->
 		<dependency>
-			<groupId>com.mckesson.kafka.connect</groupId>
+			<groupId>com.vrudenskyi.kafka.connect</groupId>
 			<artifactId>azure-api-client</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.mckesson.kafka.connect</groupId>
+			<groupId>com.vrudenskyi.kafka.connect</groupId>
 			<artifactId>gcp-api-client</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.mckesson.kafka.connect</groupId>
+			<groupId>com.vrudenskyi.kafka.connect</groupId>
 			<artifactId>http-api-client</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.mckesson.kafka.connect</groupId>
+			<groupId>com.vrudenskyi.kafka.connect</groupId>
 			<artifactId>incapsula_logs-api-client</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.mckesson.kafka.connect</groupId>
+			<groupId>com.vrudenskyi.kafka.connect</groupId>
 			<artifactId>jira-api-client</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.mckesson.kafka.connect</groupId>
+			<groupId>com.vrudenskyi.kafka.connect</groupId>
 			<artifactId>lastpass_ent-api-client</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.mckesson.kafka.connect</groupId>
+			<groupId>com.vrudenskyi.kafka.connect</groupId>
 			<artifactId>o365_reports-api-client</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.mckesson.kafka.connect</groupId>
+			<groupId>com.vrudenskyi.kafka.connect</groupId>
 			<artifactId>okta_logs-api-client</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.mckesson.kafka.connect</groupId>
+			<groupId>com.vrudenskyi.kafka.connect</groupId>
 			<artifactId>workday_audit-api-client</artifactId>
 			<version>${project.version}</version>
 		</dependency>
